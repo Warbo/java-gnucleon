@@ -1,0 +1,82 @@
+Gnucleon version 0.1
+---------------------
+
+Legal crap
+-----------
+
+The code for this game (the file "Gnucleon.java") is released into the
+Public Domain because I can't be botherered to run around answering
+questions about licensing for a little experiment I spent a couple of
+hours on.
+
+How to get it to work
+----------------------
+
+Gnucleon is made in Java, which I know I know, is not yet Free, but it
+is the language taught throughout Sheffield University so it is what I
+know. If the already compiled version doesn't work for you (running
+the file "Gnucleon" should do it) then you may have to compile it
+yourself. The ways of doing this vary, but the (not Free yet) Sun
+way of doing it is to have the Java Software Development Kit (SDK) and
+run "javac Gnucleon.java". Then you can try running the "Gnucleon"
+file again. If that doesn't work... Well, I am a complete n00b and
+that is why it is version 0.1. Feel Free to improve it if you want, it
+is in the Public Domain so therefore it is yours :)
+
+How to play
+------------
+
+The current setup has 2 human players and a board of 12x10 squares.
+These can be changed by editing the Gnucleon.java file.
+
+Playing is relatively simple:
+
+The squares on the board represent atoms. The atoms start off with no
+nucleons (the bits in the middle, surrounded by the spinny bits),
+hence the number zero on them.
+
+Players take turns adding nucleons to the atoms, which is done by
+clicking on a square (atom).
+
+Any atoms a player adds to become owned by them.
+
+Players can only add to their own atoms, or empty ones.
+
+Once atoms reach a critical mass they explode.
+
+The critical mass of an atom depends on the number of neighbours it
+has. Atoms in the corners only have 2 neighbours, so their critical
+mass is 2. Atoms around the edges have 3 neighbours, so their critical
+mass is 3. The rest of the atoms have 4 neighbours so their critical
+mass is 4.
+
+When an atom explodes it sends one nucleon to each of its neighbours.
+
+These neighbours become owned by player who caused the explosion.
+
+If the neighbours become critical due to receiving this new nucleon
+then they explode, causing chain reactions.
+
+If a player loses all of their atoms then they lose the game. (This
+is not yet detected, so you'll have to look for it yourself)
+
+Known bugs
+-----------
+
+If extremely huge chain reactions happen then some errors appear on
+the command line and the reaction quits early without switching to
+the next player.
+
+There is no visual feedback when large chain reactions are being
+calculated.
+
+A decent GUI is being worked on. Honest.
+
+The end
+--------
+
+I hope that this at least doesn't detract from your happiness at all,
+even if it doesn't add to it :)
+
+Thanks for reading, hope you have fun
+Warbo
